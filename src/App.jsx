@@ -1,14 +1,20 @@
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
+import Layout from "./Components/Layout";
 import Main from "./Components/Main";
-
+import Home from "./Pages/Home";
+import Fovorites from "./Pages/Fovorites";
+import MovieInfo from "./Pages/MovieInfo";
+import { Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <div className="App">
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/fovorites" element={<Fovorites />} />
+          <Route path="/movie/:id" element={<MovieInfo />} />
+        </Routes>
+      </Layout>
+    </div>
   );
 }
 
