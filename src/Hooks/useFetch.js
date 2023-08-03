@@ -14,7 +14,7 @@ export const useFetch = (url, customParams = {}) => {
       ...customParams,
     },
   };
-  const { page, query, url } = customParams;
+  const { page, query } = customParams;
   useEffect(() => {
     const fetchData = async () => {
       try {
