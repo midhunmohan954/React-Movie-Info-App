@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import { AppContext } from "../Context/appContext";
+import { AppContext } from "../Context/AppContext";
 
 function Pagination({ page, total_pages }) {
   const { dispatch } = useContext(AppContext);

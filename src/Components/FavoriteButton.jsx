@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import { AppContext } from "../Context/appContext";
+import { AppContext } from "../Context/AppContext";
 import StarFilled from "../assets/yellow-empty-heart-11115.svg";
 import Starfill from "../assets/yellow-heart-11122.svg";
 const FavoriteButton = ({ movie }) => {

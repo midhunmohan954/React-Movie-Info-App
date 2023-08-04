@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import { AppContext } from "../Context/appContext";
+import { AppContext } from "../Context/AppContext";
 import Wrapper from "./Wrapper";
 import { Link } from "react-router-dom";
 import SearchBox from "./SearchBox";
