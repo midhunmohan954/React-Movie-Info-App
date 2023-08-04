@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import React from "react";
-import { AppContext } from "../Context/appContext";
+import { AppContext } from "../Context/AppContext";
 import Wrapper from "../Components/Wrapper";
 import MovieCard from "../Components/MovieCard";
 
