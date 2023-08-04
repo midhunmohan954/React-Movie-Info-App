@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import SearchBox from "./SearchBox";
 function Header() {
   const { state } = useContext(AppContext);
-  console.log({ state });
+
   return (
     <header>
       <Wrapper>
@@ -22,6 +22,7 @@ function Header() {
               Favorites
             </div>
           </Link>
+
           <SearchBox />
         </div>
       </Wrapper>

@@ -50,9 +50,9 @@ function Slider() {
             slidesPerView: 1,
             spaceBetween: 20,
             fontSize: 40,
-            margin: 0,
-            padding: 0,
-            spaceBetween: 0,
+            // margin: 0,
+            // padding: 0,
+            // spaceBetween: 0,
           },
           768: {
             slidesPerView: 1,

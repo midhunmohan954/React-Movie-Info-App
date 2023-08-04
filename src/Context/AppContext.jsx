@@ -2,7 +2,7 @@ import { createContext, useEffect, useReducer } from "react";
 import { initialState, reducer } from "../Reducer/appReducer";
 export const AppContext = createContext();
 
-const AppContextWrapper = ({ children }) => {
+export const AppContextWrapper = ({ children }) => {
   let localState = localStorage.getItem("AppState");
 
   let initialStateValue = localState ? JSON.parse(localState) : initialState;
@@ -18,4 +18,4 @@ const AppContextWrapper = ({ children }) => {
     <AppContext.Provider value={contextValue}>{children}</AppContext.Provider>
   );
 };
-export default AppContextWrapper;
+// export default AppContextWrapper;

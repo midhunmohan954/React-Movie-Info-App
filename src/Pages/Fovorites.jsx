@@ -7,16 +7,14 @@ import MovieCard from "../Components/MovieCard";
 const Fovorites = () => {
   const { state } = useContext(AppContext);
   return (
-    <div>
-      <Wrapper>
-        <h2 className="sectionTitle">Favorite Movies</h2>
-        <div className="gallery">
-          {state.favorites.map((movie) => {
-            return <MovieCard key={movie.id} movie={movie} />;
-          })}
-        </div>
-      </Wrapper>
-    </div>
+    <Wrapper>
+      <h2 className="sectionTitle">Favorite Movies</h2>
+      <div className="gallery">
+        {state?.favorites.map((movie) => {
+          return <MovieCard key={movie.id} movie={movie} />;
+        })}
+      </div>
+    </Wrapper>
   );
 };
 

@@ -27,8 +27,7 @@ const SearchBox = () => {
                       alt=""
                     />
                     <Link to={`movie/${item.id}`}>
-                      {" "}
-                      <p> {item.title}</p>{" "}
+                      <p> {item.title}</p>
                     </Link>
                   </li>
                 </div>
