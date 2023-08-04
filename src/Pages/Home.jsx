@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import Wrapper from "../Components/Wrapper";
 import MovieCard from "../Components/MovieCard";
-import { AppContext } from "../Context/appContext";
+import { AppContext } from "../Context/AppContext";
 import Pagination from "../Components/Pagination";
 import Loader from "../Components/Loader";
 import ErrorMessage from "../Components/ErrorMessage";
