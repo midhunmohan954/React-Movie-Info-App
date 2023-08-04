@@ -1,8 +1,12 @@
 import React from "react";
+import { useContext } from "react";
+import { AppContext } from "../Context/appContext";
 import Wrapper from "./Wrapper";
 import { Link } from "react-router-dom";
 import SearchBox from "./SearchBox";
 function Header() {
+  const { state } = useContext(AppContext);
+  console.log({ state });
   return (
     <header>
       <Wrapper>
@@ -12,9 +16,13 @@ function Header() {
               <h1>React Flix</h1>
             </Link>
           </div>
-          <Link to={"/fovorites"}>Favorites</Link>
+          <Link to="/fovorites">
+            <div className="favCount">
+              <span className="count">{state?.favorites?.length}</span>
+              Favorites
+            </div>
+          </Link>
           <SearchBox />
-          <p>login</p>
         </div>
       </Wrapper>
     </header>

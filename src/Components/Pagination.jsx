@@ -1,13 +1,21 @@
 import React from "react";
+import { useContext } from "react";
+import { AppContext } from "../Context/appContext";
 
-function Pagination({ page, setPage, total_pages }) {
+function Pagination({ page, total_pages }) {
+  const { dispatch } = useContext(AppContext);
+
   const handleNextPage = () => {
-    setPage((prev) => prev + 1);
+    dispatch({
+      type: "NEXT_PAGE",
+    });
   };
 
   const handlePrevPage = () => {
     if (page > 1) {
-      setPage((prev) => prev - 1);
+      dispatch({
+        type: "PREV_PAGE",
+      });
     }
   };
 

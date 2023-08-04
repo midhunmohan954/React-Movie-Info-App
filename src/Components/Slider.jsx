@@ -46,9 +46,13 @@ function Slider() {
         onSlideChange={() => console.log("slide change")}
         // onSwiper={(swiper) => }
         breakpoints={{
-          440: {
+          340: {
             slidesPerView: 1,
             spaceBetween: 20,
+            fontSize: 40,
+            margin: 0,
+            padding: 0,
+            spaceBetween: 0,
           },
           768: {
             slidesPerView: 1,
@@ -73,7 +77,7 @@ function Slider() {
                 alt=""
               />
               <div className="slideCaption">
-                <h2>{item.title}</h2>
+                <h1 style={{ fontSize: 50 }}>{item.title}</h1>
               </div>
             </SwiperSlide>
           );
